@@ -1,0 +1,33 @@
+use <polyScrewThread_r1.scad>
+
+$fn = 100;
+
+module zylinder1() {
+ rotate([0,90,0]) cylinder(140,15,15);
+}
+
+
+difference(){
+    rotate([0,90,0]) cylinder(130,20,20);
+   translate ([-5,0,0]) zylinder1();
+    }
+    
+
+
+difference() {
+       sphere(20);
+       zylinder1();
+    difference(){
+sphere(15);
+           
+    }
+}
+   
+
+difference(){
+ rotate([0,90,0]) 
+    hex_screw(35,10,55,30,1,30,0,120,20,0);
+     rotate([0,90,0]) cylinder(210,10,10);}
+     
+     
+     
