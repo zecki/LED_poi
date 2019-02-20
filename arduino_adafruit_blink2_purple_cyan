@@ -1,0 +1,25 @@
+
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(0, OUTPUT);
+  pinMode(1, OUTPUT);
+  pinMode(4, OUTPUT);
+
+// 0 = blue  1 = green  4 = red
+}
+
+void loop() {
+
+digitalWrite(0, HIGH);
+digitalWrite(4, HIGH);
+delay(650);
+digitalWrite(0, LOW);
+digitalWrite(4, LOW);
+delay(650);
+digitalWrite(0, HIGH);
+digitalWrite(1, HIGH);
+delay(650);
+digitalWrite(0, LOW);
+digitalWrite(1, LOW);
+delay(650);
+}
