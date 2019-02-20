@@ -1,0 +1,107 @@
+use <polyScrewThread_r1.scad>
+
+$fn = 100;
+
+module zylinder2() {
+ rotate([0,90,0]) cylinder(50,17,17);
+}
+
+ 
+ module Kuppel() {
+    difference() {
+    sphere(20);
+        difference() {
+          translate([0,0,-100])  cylinder(300,2,2);
+           
+    }
+}
+}
+
+
+module Microcontroller() {
+   translate([-22,0,0]) cube([180,4.5,18],center=true);
+}
+
+difference(){
+    difference() {
+        rotate([0,90,0])        cylinder(40,20,20);
+        translate([0,0,-100])   cylinder(300,2,2);
+}use <polyScrewThread_r1.scad>
+
+$fn = 100;
+
+module zylinder2() {
+ rotate([0,90,0]) cylinder(50,17,17);
+}
+
+ 
+ module Kuppel() {
+    difference() {
+    sphere(20);
+        difference() {
+          translate([0,0,-100])  cylinder(300,2,2);
+           
+    }
+}
+}
+
+
+module Microcontroller() {
+   translate([-22,0,0]) cube([180,4.5,18],center=true);
+}
+
+difference(){
+    difference() {
+        rotate([0,90,0])        cylinder(40,20,20);
+        translate([0,0,-100])   cylinder(300,2,2);
+}
+;
+   zylinder2();
+    }
+    
+
+    
+difference() {
+    translate([40,0,0]) rotate([0,90,0]) hex_nut(40,30,10,55,35,1);
+    Rohrteil();
+}
+
+difference() {
+    difference(){
+    Kuppel();
+    zylinder2();
+    }
+    Microcontroller();
+}
+
+module Rohrteil() {
+difference() {
+    rotate([0,90,0]) translate([0,0,40]) cylinder(70,45,45);
+    rotate([0,90,0]) translate([0,0,39]) cylinder(80,20,20);
+}
+}
+;
+   zylinder2();
+    }
+    
+
+    
+difference() {
+    translate([40,0,0]) rotate([0,90,0]) hex_nut(40,30,10,55,35,1);
+    Rohrteil();
+}
+
+difference() {
+    difference(){
+    Kuppel();
+    zylinder2();
+    }
+    Microcontroller();
+}
+
+module Rohrteil() {
+difference() {
+    rotate([0,90,0]) translate([0,0,40]) cylinder(70,45,45);
+    rotate([0,90,0]) translate([0,0,39]) cylinder(80,20,20);
+}
+}
