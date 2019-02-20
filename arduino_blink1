@@ -1,0 +1,13 @@
+digitalWrite(0, HIGH);
+delay(650);
+digitalWrite(4, LOW);
+delay(650);
+digitalWrite(1, HIGH);
+delay(650);
+digitalWrite(0, LOW);
+delay(650);
+digitalWrite(4, HIGH);
+delay(650);
+digitalWrite(1,LOW);
+delay(650);
+}
